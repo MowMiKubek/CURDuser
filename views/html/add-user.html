@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!--Header-->
+        <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                        <a href="./" class="nav-brand text-dark">User Management System</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--/Header-->
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-content"> <!--justify-between -->
+                <a href="./add-user" class="border-shadow">
+                    <span class="text-gradient">
+                        New User
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="fiter">
+                <a href="./"><i class="fas fa-angle-double-left"></i> All users</a>
+            </div>
+            <div class="form-title text-center">
+                <span class="text-light">Use the below form to create a new account</span>
+            </div>
+
+            <form id="update_user" method="POST">
+                    <div class="new_user">
+                        <div class="form-group">
+                            <label for="name" class="text-light">Name</label>
+                            <input type="hidden" name="id" value="">
+                            <input type="text" name="name" value="" placeholder="Mark JAkistam">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-light">Email</label>
+                            <input type="text" name="email" value="" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" class="text-light">Gender</label>
+                            <div class="radio inline">
+                                <input type="radio" id="radio_1" name="gender" value="male">
+                                <label for="radio_1" class="radio_label">Male</label>
+                            </div>
+                            <div class="radio inline">
+                                <input type="radio" id="radio_2" name="gender" value="female">
+                                <label for="radio_2" class="radio_label">Female</label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" class="text-light">Status</label>
+                            <div class="radio inline">
+                                <input type="radio" id="radio_3" name="status" value="active">
+                                <label for="radio_3" class="radio_label">Active</label>
+                            </div>
+                            <div class="radio inline">
+                                <input type="radio" id="radio_4" name="status" value="inactive">
+                                <label for="radio_4" class="radio_label">Inactive</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn text-dark update">Save</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </main>
+    <!-- /Main Site -->
+</body>
+</html>
